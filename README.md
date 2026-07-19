@@ -1,4 +1,4 @@
-# BloxFlip-Mine-Predictor
+# BloxFlip-Predictors
 
 idk what to write here lol
 
