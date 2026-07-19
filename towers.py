@@ -39,7 +39,7 @@ async def towers(interaction: discord.Interaction, round_id:str, tile_amount:int
         em.add_field(name="Grid", value="```"+grid[7][0]+grid[7][1]+grid[7][2]+"\n"+grid[6][0]+grid[6][1]+grid[6][2]+"\n"+grid[5][0]+grid[5][1]+grid[5][2]+"\n"+grid[4][0]+grid[4][1]+grid[4][2] +"\n"+ \
             grid[3][0]+grid[3][1]+grid[3][2] + "\n" + grid[2][0]+grid[2][1]+grid[2][2] + "\n" + grid[1][0]+grid[1][1]+grid[1][2] + "\n" + grid[0][0]+grid[0][1]+grid[0][2] + "```" \
                 + f"**Accuracy**\n```{chance}%```\n**Round ID**\n```{round_id}```\n**Response Time:**\n```{str(int(time.time() - int(start_time)))}```")
-        
+        em.set_footer(text="Made by haunt")
         await interaction.response.send_message(embed=em)
     else:
         em = discord.Embed(color=0xff0000)
